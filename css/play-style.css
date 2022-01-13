@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7FFF7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3,h2{
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 3rem);
+    color: #434A42;
+}
+
+.grid{
+    border-radius: 6px;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: min(600px, 80%);
+    height: min(600px, 80vw);
+    background-color: #F3B391;
+}
+
+.grid-2{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: min(90px, 12.66%);
+    height: min(90px, 12.66%);
+    margin: 2%;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.grid.tile{
+    background-image: url("../assets/images/chess-board.svg");
+    background-color: #626C66;
+}
+
+.bishop{
+    background-image: url("../assets/images/chess-bishop.svg");
+    background-color: #fbb5b1;
+}
+
+.rook{
+    background-image: url("../assets/images/chess-rook-solid.svg");
+    background-color: #ff6b6b;
+}
+
+.king{
+    background-image: url("../assets/images/chess-king.svg");
+    background-color: #a3e6de;
+}
+
+.knight{
+    background-image: url("../assets/images/chess-knight.svg");
+    background-color: #ffd86d;
+}
+
+.pawn{
+    background-image: url("../assets/images/chess-pawn.svg");
+    background-color: #ff896c;
+}
+
+.queen{
+    background-image: url("../assets/images/chess-queen.svg");
+    background-color: #386b6c;
+}

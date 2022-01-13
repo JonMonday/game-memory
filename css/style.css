@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7FFF7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3,h2{
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 3rem);
+    color: #434A42;
+}
+
+.grid{
+    border-radius: 6px;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: min(600px, 80%);
+    height: min(600px, 80vw);
+    background-color: rgb(248,231,187);
+}
+
+.grid-2{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: min(90px, 12.66%);
+    height: min(90px, 12.66%);
+    margin: 2%;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.grid-odd:nth-child(odd){
+    background-color: #fffdf5;
+}
+.grid-odd:nth-child(even){
+    background-color: rgb(102,0,0);
+}
+
+.grid-even:nth-child(odd){
+    background-color: rgb(102,0,0);
+}
+.grid-even:nth-child(even){
+    background-color: #fffdf5;
+}
+
+.grid-even.checked,
+.grid-odd.checked{
+    background-image: none;
+}
+
+.grid-even.active,
+.grid-odd.active{
+    background-image: none;
+}
+
+.grid-odd.correct,
+.grid-even.correct{
+    background-color: #3F612D;
+}
+
+.grid-odd.wrong,
+.grid-even.wrong{
+    background-color: #6f0707;
+}
+
+.Bishop{
+    background-image: url("../assets/images/chess-bishop.svg");
+}
+
+.rook{
+    background-image: url("../assets/images/chess-rook-solid.svg");
+}
+
+.King{
+    background-image: url("../assets/images/chess-king.svg");
+}
+
+.Knight{
+    background-image: url("../assets/images/chess-knight.svg");
+}
+
+.Pawn{
+    background-image: url("../assets/images/chess-pawn.svg");
+}
+
+.Queen{
+    background-image: url("../assets/images/chess-queen.svg");
+}
+
+.rotating{
+    animation: rotation 4s infinite linear alternate;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+
